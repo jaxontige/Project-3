@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Events</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>The effect on rent of including utilities & amenities</h2>
+    <p>Number of units, nationwide, that offer utility / amenity in that price bracket</p>
+    <select id="selDataset">
+        <option value="inclAll">Include All</option>
+        <option value="exclAll">Exclude All</option>
+        <option value="inclUtilities">Include Utilities</option>
+        <option value="exclUtilities">Exclude Utilities</option>
+        <option value="inclAmenities">Include Amenities</option>
+        <option value="exclAmenities">Exclude Amenities</option>
+    </select>
+
+    <div id="bar"></div>
+
+    <p>Data Sources:<br />
+        <ul>
+            <li>
+                <a href="https://www.census.gov/programs-surveys/rhfs.html">Rental Housing Finance Survey</a>
+            </li>
+        </ul>
+    </p>
+    <script src="data.js"></script>
+    <script src="plot.js"></script>
+</body>
+</html>
