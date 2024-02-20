@@ -36,7 +36,7 @@ function init() {
             b: 100
         }
     };
-
+    // Create the visualization with Plotly
     Plotly.newPlot("bar", data, layout);
 };
 
