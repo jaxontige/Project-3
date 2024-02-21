@@ -69,4 +69,6 @@ I ended up collapsing several small rental price ranges into larger ranges to mo
 
 Ideally, I will do a T-test, which will allow some sort of conclusion regarding whether inclusion of these extras actually is correlated to a higher rental rate in a statstically significant way. The issue here is that I would need to make assumption about where a given property or rental unit falls within a very large rental price range. 
 
-I created an interactive visualization that can be found in the files on the branch called "James".
+I created an interactive visualization that is run via the 'index.html' file drawing from 'plot.js' and 'data.js'. 
+
+The dataset is stored in the SQLite file.
