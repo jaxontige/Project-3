@@ -6,7 +6,9 @@ The group started with the intention of only using the Rental Housing Finance Su
 
 ### Rent range by location and rental size. 
 
-RentalRatesWranglingTest: This notebook was the initial code I wrote to slice up my data. It does use a module we didn't go over in class and I had to create a username to pull COORD data so I hope that works for you on your side with my username. You'll notice this code runs until the forloop for zip conversion to coordinates. That's where I stopped using this file and took my new work.
+RentalRatesWranglingTest.ipynb: This notebook was the initial code I wrote to slice up my data. It does use a module we didn't go over in class and I had to create a username to pull COORD data so I hope that works for you on your side with my username. You'll notice this code runs until the forloop for zip conversion to coordinates. That's where I stopped using this file and took my new work.
+
+FinalRentalRatesCode.ipynb: This is the final notebook where the rental rates visualizations came from. While the zip conversion was running in the background, I realized I may never get my answers in time (it ran for over 1200 minutes). This is when I found a new data set with both zip codes and coordinates that I merged by zipcode to my rental rate dataframe and plotted the visualizations fromt here using Cartopy.
 
 Data: https://www.huduser.gov/portal/datasets/fmr.html#documents_2024
 Zip/Coordinates: https://download.geonames.org/export/zip/
