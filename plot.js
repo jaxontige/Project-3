@@ -15,6 +15,8 @@ let labels = Object.keys(data.inclAll);
 console.log(labels);
 
 // Display the default plot
+
+
 function init() {
 
     let trace1 = {
@@ -26,10 +28,18 @@ function init() {
         }
     };
 
+
+
     let data = [trace1];
 
+    // Testing this to see if I can make the title of the chart dynamic
+    // Get the selected option element
+    let dropdownMenu = d3.select("#selDataset");
+
+
+
     let layout = {
-        title: `Rental rates for Selection`,
+        title: `Percent of Properties in Rental Rate Bracket Meeting this Condition`,
         height: 600,
         width: 1500,
         margin: {
@@ -46,25 +56,25 @@ d3.selectAll("#selDataset").on("change", getData);
 // Function called by DOM changes
 function getData() {
   let dropdownMenu = d3.select("#selDataset");
-  // Assign the value of the dropdown menu option to a letiable
+  // Assign the value of the dropdown menu option to a variable
   let dataset = dropdownMenu.property("value");
-  // Initialize an empty array for the country's data
+  // Initialize an empty array for the data
   let data = [];
 
   if (dataset == 'inclAll') {
-      data = inclAll;
+    data = inclAll;
   }
   else if (dataset == 'exclAll') {
-      data = exclAll;
+    data = exclAll;
   }
   else if (dataset == 'inclUtilities') {
-      data = inclUtilities;
+    data = inclUtilities;
   }
   else if (dataset == 'exclUtilities') {
     data = exclUtilities;
   }
   else if (dataset == 'inclAmenities') {
-      data = inclAmenities;
+    data = inclAmenities;
   }
   else if (dataset == 'exclAmenities') {
     data = exclAmenities;
