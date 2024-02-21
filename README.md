@@ -4,7 +4,29 @@
 
 The group started with the intention of only using the Rental Housing Finance Survey dataset provided by the US Census. However, for at least two of our areas of inquiry, we found the data available in this dataset to be insufficient. For those 2 areas of inquiry -- the effect of number of bedrooms and the effect of mortgage rates on rental prices -- we went outside this dataset to grab data from zillow, FreddieMac, and other similar sources listed in our final presentation.
 
-### The effect of number of bedrooms on rental rates (Jaxon)
+### Rent range by location and rental size. 
+
+Data: https://www.huduser.gov/portal/datasets/fmr.html#documents_2024
+Zip/Coordinates: https://download.geonames.org/export/zip/
+
+The data allowed me to analyze studio, 1, 2, 3 and 4 bedroom rental pricing based on city/zipcode
+This presented some interesting challenges while wrangling in Python. I knew I could map off of coordinates, but not postal code. So I found some modules and APIs to help me do this. 
+These were "Cartopy" and the "Geocode" modules/API's to help me convert zip codes to coordinates and then plot them on a map.
+Initially, I wrote a for loop that would look at each zip code on each line of data, and request the coordinates based on the zip code. The problem was that it was running about 100 rows per minute, and there were 30,000 rows. I knew this would not be practical so I started working on a fix in while it ran in the background.
+
+I came across documentation in the form of a .txt that contained zip codes AND a column for latitude and longitude. I imported the txt as a CSV and was then able to merge by zip code with my data set. Cartopy is what I used to plot the heat map visualizations. Both Cartopy and the geocode module I used were new and fun to learn about.
+
+As far as sources, it took me several hours of trouble shooting to get everything working properly. Here are a few of those sources: 
+https://github.com/dwdii/HudFmrDataAnalyzer/blob/master/Project/project_hudfmr.py
+https://www.geeksforgeeks.org/get-the-city-state-and-country-names-from-latitude-and-longitude-using-python/
+https://stackoverflow.com/questions/13686001/python-module-for-getting-latitude-and-longitude-from-the-name-of-a-us-city
+https://stackoverflow.com/questions/26276769/python-geopy-install
+https://geocoder.readthedocs.io/providers/GeoNames.html
+https://geopy.readthedocs.io/en/stable/#installation
+https://pandas.pydata.org/docs/reference/api/pandas.Series.str.split.html
+https://stackoverflow.com/questions/71903795/using-a-for-loop-to-make-a-cartopy-plot-of-lines-from-different-latitude-and-lon
+Chat GPT
+
 
 
 ### The effect of lease length on rental rates (Jenna)
