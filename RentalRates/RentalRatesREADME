@@ -1,0 +1,1 @@
+#Test Notebook is where this analysis started, but do to the time it took to convert zip codes to coordinates, a new solution was found and implemented in the final ipynb for rental rates. I interrupted the for loop at over 1200 minutes, so I doubt you'll want to run that one.
