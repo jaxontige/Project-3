@@ -34,6 +34,11 @@ https://www.statology.org/pandas-stacked-bar-chart/#:~:text=You%20can%20use%20th
 
 ### The effect of mortgage rates on rental prices (Bryson)
 
+In this section analyzing the correlation between rental rates and mortgage rates, I utilized two distinct datasets sourced from Zillow and Fannie Mae. Through thorough examination, I uncovered a notable correlation across various cities, indicating that as mortgage rates surged, so did rental rates. However, amidst the analysis, it became apparent that the tumultuous effects of the COVID-19 pandemic might have obscured the true nature of this relationship, as other confounding factors could have influenced fluctuations in both rates and rents during this period.
+
+PMMS_DATA = https://www.freddiemac.com/pmms/pmms_archives
+ZILLOW = https://www.zillow.com/research/data/
+
 ### The effect of utility and amenity inclusion and exclusion on rental prices (James)
 
 For Utilities (identified as Electric, Gas, Water, and Sewer) and Amenities (defined as Cable, Wifi, Pool, and Parking) the data provided information regarding the number of units, within certain rental price ranges, that included or excluded a given utility or amenity in the price of rent. The data required a lot of transformation, including weighting as provided by the Census Bureau, and more to be workable. 
