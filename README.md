@@ -6,6 +6,8 @@ The group started with the intention of only using the Rental Housing Finance Su
 
 ### Rent range by location and rental size. 
 
+RentalRatesWranglingTest: This notebook was the initial code I wrote to slice up my data. It does use a module we didn't go over in class and I had to create a username to pull COORD data so I hope that works for you on your side with my username. You'll notice this code runs until the forloop for zip conversion to coordinates. That's where I stopped using this file and took my new work.
+
 Data: https://www.huduser.gov/portal/datasets/fmr.html#documents_2024
 Zip/Coordinates: https://download.geonames.org/export/zip/
 
